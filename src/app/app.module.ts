@@ -1,16 +1,21 @@
+import { ParticipantsService } from './participants.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ParticipantsComponent } from './participants/participants.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParticipantsComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    ParticipantsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
